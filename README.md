@@ -1,3 +1,5 @@
-## zf5_project
+## maxence.aici.me
 
-(place your readme here)
+Source code of my website, [maxence.aici.me](maxence.aici.me)
+
+I used Grunt, Foundation, SCSS
