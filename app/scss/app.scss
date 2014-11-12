@@ -1,0 +1,142 @@
+@import "normalize";
+@import "settings";
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+// Behold, here are all the Foundation components.
+@import
+
+"foundation/components/grid",
+"foundation/components/accordion",
+"foundation/components/alert-boxes",
+"foundation/components/block-grid",
+"foundation/components/breadcrumbs",
+"foundation/components/button-groups",
+"foundation/components/buttons",
+"foundation/components/clearing",
+"foundation/components/dropdown",
+"foundation/components/dropdown-buttons",
+"foundation/components/flex-video",
+"foundation/components/forms",
+"foundation/components/icon-bar",
+"foundation/components/inline-lists",
+"foundation/components/joyride",
+"foundation/components/keystrokes",
+"foundation/components/labels",
+"foundation/components/magellan",
+"foundation/components/orbit",
+"foundation/components/pagination",
+"foundation/components/panels",
+"foundation/components/pricing-tables",
+"foundation/components/progress-bars",
+"foundation/components/range-slider",
+"foundation/components/reveal",
+"foundation/components/side-nav",
+"foundation/components/split-buttons",
+"foundation/components/sub-nav",
+"foundation/components/switches",
+"foundation/components/tables",
+"foundation/components/tabs",
+"foundation/components/thumbs",
+"foundation/components/tooltips",
+"foundation/components/top-bar",
+"foundation/components/type",
+"foundation/components/offcanvas",
+"foundation/components/visibility";
+@import "appstyles";
+@import "utils";
+$emphasis-color:#4fded1;
+$text-color:#efefef;
+$header-fs: Megrim, sans-serif;
+$body-fs: "Roboto Slab", sans-serif;
+#welcome {
+    @include sleekbg('../images/mainbg-opti.jpg');
+    height: 100%;
+    min-height: 500px;
+    min-width: 100%;
+    .margin-wtf {
+        height: 10em;
+    }
+    h1 {
+        font-family: $header-fs;
+        color: white;
+        text-align: center;
+        font-size: 5em;
+        margin-bottom: 1em;
+        margin-top: 0;
+        span {
+            border: 1px solid white;
+            padding: .3em .6em;
+        }
+    }
+    p {
+        font-family: $body-fs;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 300;
+        a, a:active, a:visited, a:hover {
+            color: inherit;
+            font-weight: 400;
+        }
+        span:not(:first-child) {
+            margin-left: 1rem;
+        }
+    }
+    p.title {
+        //font-size: 2rem;
+        text-transform: uppercase;
+        word-spacing: .4rem;
+    }
+}
+.stuffbar {
+    $stuffbar-height: 15rem;
+    background: $text-color;
+    margin-top: 0;
+    /*height: $stuffbar-height;*/
+    h2 {
+        font-family: $header-fs;
+        color: $emphasis-color;
+        text-align: center;
+        font-size: 4rem;
+        line-height: $stuffbar-height;
+    }
+    p {
+        font-family: $body-fs;
+        text-align: justify;
+        color: #484848;
+        font-size: 1rem;
+        padding-top: 2rem;
+        a, a:active, a:visited, a:hover {
+            color: $emphasis-color;
+        }
+    }
+}
+footer {
+    @include sleekbg('../images/contact.jpg');
+    margin-top: 0;
+    padding-top: 7rem;
+    padding-bottom: 14rem;
+    h2 {
+        font-family: $header-fs;
+        color: $text-color;
+        text-align: center;
+        font-size: 4rem;
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 7rem;
+    }
+    h3 {
+        font-family: $body-fs;
+        text-align: center;
+        color: $text-color;
+        font-size: 3rem;
+        padding-top: 2rem;
+        font-weight: 100;
+        //text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.68);
+        em {
+            font-style: normal;
+            font-family: $body-fs;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+    }
+}
