@@ -17,10 +17,20 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Megrim|Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <!--[if lte IE 8]>
+        <style>
+            #oldbrowser {
+                visibility: visible;
+            }
+        </style>
+    <![endif]-->
 </head>
 
 <body>
-
+    <div id="oldbrowser" class="">
+        <h1>Warning : You are using an outdated brower :(</h1>
+        <p>Please update your browser, or just download my <a href="http://maxenceaici.fr/files/cv.pdf">resume</a> ! <br> <a href="#" id="closewarning">Close this warning</a></p>
+    </div>
     <section id="welcome">
         <div class="margin-wtf"></div>
         <div class="top">

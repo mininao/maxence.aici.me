@@ -23,3 +23,7 @@ var app = (function(document, $) {
 	app.init();
 
 })();
+
+$('#closewarning').click(function(){
+    $("#oldbrowser").fadeOut();
+});

@@ -55,6 +55,7 @@ $body-fs: "Roboto Slab", sans-serif;
     min-width: 100%;
     .margin-wtf {
         height: 10em;
+        @media only screen and (max-width: 40em) { height: 5em; }
     }
     h1 {
         font-family: $header-fs;
@@ -65,6 +66,14 @@ $body-fs: "Roboto Slab", sans-serif;
         margin-top: 0;
         span {
             border: 1px solid white;
+            padding: .3em .6em;
+        }
+        @media only screen and (max-width: 40em) {
+            span {
+                border: none;
+                padding-left: 0;
+                padding-right: 0;
+            }
             padding: .3em .6em;
         }
     }
@@ -85,6 +94,8 @@ $body-fs: "Roboto Slab", sans-serif;
         //font-size: 2rem;
         text-transform: uppercase;
         word-spacing: .4rem;
+        margin-left: .4em;
+        margin-right: .4em;
     }
 }
 .stuffbar {
@@ -138,5 +149,28 @@ footer {
             font-size: 2.5rem;
             font-weight: 700;
         }
+    }
+}
+#oldbrowser {
+    visibility: collapse;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.78);
+    z-index: 9999;
+    h1 {
+        color: $emphasis-color;
+        font-family: "Roboto Slab", sans-serif;
+        text-align: center;
+        margin-top: 4em;
+    }
+    p {
+        color: $emphasis-color;
+        font-family: "Roboto Slab", sans-serif;
+        text-align: center;
+        a, a:active, a:visited, a:hover {
+            color: inherit;
+            text-decoration: underline;
+        }        
     }
 }
