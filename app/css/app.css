@@ -13759,7 +13759,11 @@ th.hide-for-touch {
 
 /* all app scss styles here */
 #welcome {
-  background: url('../images/mainbg-opti.jpg') no-repeat center center fixed;
+  background-color: #95D6EF;
+  background-image: url('../images/mainbg-opti.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -13825,7 +13829,11 @@ th.hide-for-touch {
       color: #4fded1; }
 
 footer {
-  background: url('../images/contact.jpg') no-repeat center center fixed;
+  background-color: #1F1E2C;
+  background-image: url('../images/contact.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

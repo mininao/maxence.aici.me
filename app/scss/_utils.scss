@@ -1,5 +1,8 @@
 @mixin sleekbg($bgurl) {
-    background: url($bgurl) no-repeat center center fixed;
+    background-image: url($bgurl);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
