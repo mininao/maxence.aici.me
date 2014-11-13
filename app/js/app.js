@@ -25,5 +25,6 @@ var app = (function(document, $) {
 })();
 
 $('#closewarning').click(function(){
-    $("#oldbrowser").fadeOut();
+    'use strict';
+    $('#oldbrowser').fadeOut();
 });
