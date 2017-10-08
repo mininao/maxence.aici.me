@@ -1,59 +1,84 @@
 <template>
   <div id="app">
     <header>
-      <span>Vue.js PWA</span>
+      <h1>
+        Maxence<br>
+        Aici
+      </h1>
+      <p>maker - software engineering, design, video</p>
     </header>
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <hello></hello>
+      <a href="/files/Maxence_Aici_CV.pdf">cv</a>
+      <a href="https://github.com/mininao">github</a>
+      <a href="mailto:maxence@aici.me">email</a>
     </main>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
-
 export default {
-  name: 'app',
-  components: {
-    Hello
-  }
+  name: 'app'
 }
 </script>
 
-<style>
+<style lang="scss">
+@font-face {
+  font-family: 'g-web';
+  src:  url('../static/fonts/g-Black.woff') format('woff');
+  font-weight: 800;
+}
+$color-dark: #1B1B1B;
+$color-accent-green: #00EBAF;
+$color-accent-blue: #3FDBF8;
+$color-accent-purple: #92B6F9;
+$color-accent-red: #FF7D9E;
+
 body {
   margin: 0;
+  background-color: $color-dark;
+  font-family: 'g-web', Helvetica, Arial, sans-serif;
+  font-weight: 800;
 }
-
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
-main {
-  text-align: center;
-  margin-top: 40px;
-}
-
 header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
+      margin: 2rem;
+  h1 {
+    text-transform: uppercase;
+    color: $color-accent-blue;
+    font-size: 2rem;
+    margin: 0;
+  }
+  p {
+    color: white;
+    opacity: 0.8;
+    font-size: 1rem;
+  }
 }
-
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
+main {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $color-accent-green;
+    &:nth-child(2) {
+      color: $color-accent-red;
+    }
+    &:nth-child(3) {
+      color: $color-accent-purple;
+    }
+  }
 }
 </style>
