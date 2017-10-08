@@ -1,5 +1,7 @@
 # maxenceaici
 
+[ ![Codeship Status for mininao/maxence.aici.me](https://app.codeship.com/projects/a8fe06f0-4cb1-0132-d3d2-4a214f75c8af/status?branch=master)](https://app.codeship.com/projects/47194)
+
 > Maxence's website
 
 ## Build Setup
