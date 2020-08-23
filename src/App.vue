@@ -8,7 +8,7 @@
       <p>maker - software engineering, design, video</p>
     </header>
     <main>
-      <a href="/files/Maxence_Aici_CV.pdf">cv</a>
+      <a href="https://www.linkedin.com/in/maxenceaici/">linkedin</a>
       <a href="https://github.com/mininao">github</a>
       <a href="mailto:maxence@aici.me">email</a>
     </main>
